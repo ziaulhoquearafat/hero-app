@@ -1,4 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import 'tailwindcss';
 @plugin "daisyui" {
   themes: light --default, dark, cupcake;
+}
+
+.inter-font {
+  font-family: 'Inter', sans-serif;
+}
+
+a.active {
+  color: #622ee3;
+  border-radius: 0;
+  border-bottom: 2px solid #622ee3;
 }
