@@ -88,10 +88,10 @@ const Home = () => {
           <AppCard key={app.id} app={app}></AppCard>
         ))}
       </div>
-      <div className="flex justify-center py-5">
+      <div className="flex justify-center py-5 pb-20">
         <Link
           to="/apps"
-          className="btn bg-gradient-to-t from-[#9e62f2] to-[#622ee3] text-white rounded-lg"
+          className="btn px-20 bg-gradient-to-t from-[#9e62f2] to-[#622ee3] text-white rounded-lg"
         >
           Show All
         </Link>

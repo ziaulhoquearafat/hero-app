@@ -3,9 +3,9 @@ import React from 'react';
 const AppCard = ({ app }) => {
   const { title, ratingAvg, image, downloads } = app;
   return (
-    <div className="card bg-base-100 border shadow-sm hover:scale-105 transition ease-out">
-      <figure className="h-48 overflow-hidden">
-        <img className="w-full object-cover" src={image} alt={title} />
+    <div className="card bg-base-100 hover:bg-gray-100 shadow-sm hover:scale-103 transition ease-in-out">
+      <figure className="p-4">
+        <img className="w-full rounded-xl" src={image} alt={title} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
