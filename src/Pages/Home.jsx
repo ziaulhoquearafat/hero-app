@@ -19,20 +19,20 @@ const Home = () => {
           We Build <br />
           <span className="text-[#632EE3] font-extrabold">Productive</span> Apps
         </h1>
-        <p className="text-[#627382] text-center w-full md:w-3xl mx-auto">
+        <p className="text-[#627382] text-center px-5 w-full md:w-3xl mx-auto">
           At HERO.IO , we craft innovative apps designed to make everyday life
           simpler, smarter, and more exciting.Our goal is to turn your ideas
           into digital experiences that truly make an impact.
         </p>
         <div className="flex items-center justify-center gap-10 mt-5">
           <a href="https://play.google.com/store/games" target="_blank">
-            <button className="btn flex items-center text-[#001931] text-xl py-6 px-7">
+            <button className="btn flex items-center text-[#001931] text-xs md:text-xl py-6 px-7">
               <img src={playStoreImg} alt="Apple App Store" />
               Google Play
             </button>
           </a>
           <a href="https://www.apple.com/app-store/" target="_blank">
-            <button className="btn flex items-center text-[#001931] text-xl py-6 px-7">
+            <button className="btn flex items-center text-[#001931] text-xs md:text-xl py-6 px-7">
               <img src={appleStoreImg} alt="Apple App Store" />
               App Store
             </button>
