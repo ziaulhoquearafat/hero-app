@@ -2,11 +2,19 @@ import React from 'react';
 import playStoreImg from '../assets/playStore.png';
 import appleStoreImg from '../assets/AppleStore.png';
 import heroImg from '../assets/hero.png';
+import useApps from '../hooks/useApps';
+import { TrendingUp } from 'lucide-react';
+import AppCard from '../components/AppCard';
+import { Link } from 'react-router';
 
 const Home = () => {
+  const { apps } = useApps();
+
+  const trendingApps = apps.slice(0, 8);
+
   return (
-    <div>
-      <div className="mt-16 space-y-4">
+    <div className="bg-[#f5f5f5]">
+      <div className="pt-16 space-y-4">
         <h1 className="text-[#001931] text-5xl md:text-7xl text-center font-bold md:leading-20">
           We Build <br />
           <span className="text-[#632EE3] font-extrabold">Productive</span> Apps
@@ -64,6 +72,29 @@ const Home = () => {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="text-center py-10 space-y-3">
+        <h2 className="text-3xl md:text-5xl text-[#001931] font-bold flex justify-center gap-2 items-center">
+          Trending Apps <TrendingUp size={60} color="#622ee3" />
+        </h2>
+        <p className="text-[#627382]">
+          Explore All Trending Apps on the Market developed by us
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 container mx-auto p-5">
+        {trendingApps.map(app => (
+          <AppCard key={app.id} app={app}></AppCard>
+        ))}
+      </div>
+      <div className="flex justify-center py-5">
+        <Link
+          to="/apps"
+          className="btn bg-gradient-to-t from-[#9e62f2] to-[#622ee3] text-white rounded-lg"
+        >
+          Show All
+        </Link>
       </div>
     </div>
   );
