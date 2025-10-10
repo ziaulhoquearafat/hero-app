@@ -1,10 +1,13 @@
 import React from 'react';
 import AppErrorImg from '../assets/App-Error.png';
 import { Link } from 'react-router';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const AppNotFound = () => {
   return (
     <div>
+      <Navbar />
       <div className="mx-auto py-10">
         <img className="mx-auto" src={AppErrorImg} alt="" />
         <h2 className="text-[#001931] text-3xl md:text-5xl text-center font-bold md:leading-20">
@@ -22,6 +25,7 @@ const AppNotFound = () => {
           </Link>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

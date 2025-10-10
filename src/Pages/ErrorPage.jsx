@@ -6,8 +6,7 @@ import { Link } from 'react-router';
 
 const ErrorPage = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
+    <div className="flex flex-col">
       <div className="mx-auto py-10">
         <img src={errorImg} alt="" />
         <h2 className="text-[#001931] text-3xl md:text-5xl text-center font-bold md:leading-20">
@@ -25,7 +24,6 @@ const ErrorPage = () => {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

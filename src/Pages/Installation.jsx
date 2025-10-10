@@ -43,7 +43,7 @@ const Installation = () => {
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5">
         <div className="flex justify-between items-center">
           <p className="text-[#001931] text-2xl leading-8 font-semibold">
             {sortedItem.length} Apps Found

@@ -14,27 +14,30 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import AppNotFound from '../components/AppNotFound';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 const AppDetails = () => {
   const { id } = useParams();
-  const { apps } = useApps();
-
+  const { apps, loading } = useApps();
+  const [isInstalled, setIsInstalled] = useState(false);
+  if (loading) {
+    return <LoadingSpinner />;
+  }
   const app = apps.find(ap => String(ap.id) === id);
-  // console.log(app);
+  console.log(app);
 
   const {
     image,
     title,
     description,
     ratings,
-    companyName,
+
     downloads,
     ratingAvg,
     reviews,
     size,
   } = app || {};
-
-  const [isInstalled, setIsInstalled] = useState(false);
 
   const handleClick = () => {
     toast.success(`${title} Installed Successfuly`, {
@@ -57,19 +60,27 @@ const AppDetails = () => {
     localStorage.setItem('wishlist', JSON.stringify(updateList));
   };
 
+  if (!app?.title) {
+    console.log(app.title);
+    return <AppNotFound />;
+  }
   return (
-    <div className="bg-[#f5f5f5] py-20">
-      <div className="container mx-auto">
-        <div className="flex gap-20 w-full">
+    <div className="bg-[#f5f5f5] py-10 md:py-20">
+      <div className="container mx-auto px-5">
+        <div className="md:flex gap-20 w-full">
           <div>
-            <img className="w-sm shadow-lg rounded-2xl" src={image} alt="" />
+            <img
+              className="w-full shadow-lg rounded-2xl mb-10"
+              src={image}
+              alt=""
+            />
           </div>
           <div className="w-full">
             <div>
               <h1 className="text-[#001931] font-bold text-4xl">{title}</h1>
               <p className="text-[#627382] font-semibold text-xl leading-8">
                 Developed by{' '}
-                <span className="text-[#632EE3]">{companyName}</span>
+                <span className="text-[#632EE3]">{app?.companyName}</span>
               </p>
               <p className="divider w-full"></p>
               <div className="flex items-center gap-10">
