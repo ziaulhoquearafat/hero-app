@@ -20,7 +20,7 @@ const AppDetails = () => {
   const { apps } = useApps();
 
   const app = apps.find(ap => String(ap.id) === id);
-  console.log(app);
+  // console.log(app);
 
   const {
     image,
@@ -42,6 +42,19 @@ const AppDetails = () => {
       autoClose: 3000,
     });
     setIsInstalled(true);
+
+    const existingList = JSON.parse(localStorage.getItem('installation'));
+    let updateList = [];
+
+    if (existingList) {
+      const isDuplicate = existingList.some(ap => ap.id === app.id);
+      if (isDuplicate) return;
+      updateList = [...existingList, app];
+    } else {
+      updateList.push(app);
+    }
+
+    localStorage.setItem('installation', JSON.stringify(updateList));
   };
 
   return (
