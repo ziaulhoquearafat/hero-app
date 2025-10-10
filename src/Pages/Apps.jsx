@@ -3,9 +3,11 @@ import useApps from '../hooks/useApps';
 import AppCard from '../components/AppCard';
 import { Search } from 'lucide-react';
 import AppNotFound from '../components/AppNotFound';
+import LoadingSpinner from '../components/LoadingSpinner';
+import { Link } from 'react-router';
 
 const Apps = () => {
-  const { apps } = useApps();
+  const { apps, loading } = useApps();
   const [search, setSearch] = useState('');
 
   const term = search.trim().toLocaleLowerCase();
@@ -41,12 +43,34 @@ const Apps = () => {
         </label>
       </div>
 
-      {searchApps.length === 0 ? (
-        <AppNotFound />
+      {/* {loading ? (
+        <LoadingSpinner count={20} />
       ) : (
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 container mx-auto">
           {searchApps.map(app => (
             <AppCard key={app.id} app={app}></AppCard>
+          ))}
+        </div>
+      )} */}
+
+      {loading ? (
+        <LoadingSpinner count={20} />
+      ) : searchApps.length === 0 ? (
+        <div className="py-10">
+          <h3 className="text-5xl text-center text-gray-400">No Apps Found</h3>
+          <div className="flex justify-center py-5">
+            <Link
+              to="/"
+              className="btn px-20 bg-gradient-to-t from-[#9e62f2] to-[#622ee3] text-white rounded-lg"
+            >
+              Go back!
+            </Link>
+          </div>
+        </div>
+      ) : (
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 container mx-auto">
+          {searchApps.map(app => (
+            <AppCard key={app.id} app={app} />
           ))}
         </div>
       )}
