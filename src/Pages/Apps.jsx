@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import useApps from '../hooks/useApps';
 import AppCard from '../components/AppCard';
 import { Search } from 'lucide-react';
+import AppNotFound from '../components/AppNotFound';
 
 const Apps = () => {
   const { apps } = useApps();
@@ -24,7 +25,7 @@ const Apps = () => {
         </p>
       </div>
 
-      <div className="container mx-auto px-5 flex justify-between items-center">
+      <div className="container mx-auto py-5 flex justify-between items-center">
         <p className="text-[#001931] font-semibold">
           ({searchApps.length}) Apps Found
         </p>
@@ -40,11 +41,15 @@ const Apps = () => {
         </label>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 container mx-auto p-5">
-        {searchApps.map(app => (
-          <AppCard key={app.id} app={app}></AppCard>
-        ))}
-      </div>
+      {searchApps.length === 0 ? (
+        <AppNotFound />
+      ) : (
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 container mx-auto">
+          {searchApps.map(app => (
+            <AppCard key={app.id} app={app}></AppCard>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
