@@ -1,9 +1,33 @@
 import React, { useEffect, useState } from 'react';
 import downloadImg from '../assets/icon-downloads.png';
 import ratingsImg from '../assets/icon-ratings.png';
+import { toast, ToastContainer } from 'react-toastify';
 
 const Installation = () => {
   const [wishlist, setWishList] = useState([]);
+  const [sortOrder, setSortOrder] = useState('none');
+
+  const sortedItem = (() => {
+    if (sortOrder === 'size-asc') {
+      return [...wishlist].sort((a, b) => a.size - b.size);
+    } else if (sortOrder === 'size-desc') {
+      return [...wishlist].sort((a, b) => b.size - a.size);
+    } else {
+      return wishlist;
+    }
+  })();
+
+  const handleRemove = (id, title) => {
+    toast.success(`${title} Uninstall Successfuly`, {
+      position: 'top-center',
+      autoClose: 2000,
+    });
+
+    const existingList = JSON.parse(localStorage.getItem('wishlist'));
+    let updateList = existingList.filter(ap => ap.id !== id);
+    setWishList(updateList);
+    localStorage.setItem('wishlist', JSON.stringify(updateList));
+  };
 
   useEffect(() => {
     const saveList = JSON.parse(localStorage.getItem('wishlist'));
@@ -20,14 +44,25 @@ const Installation = () => {
         </p>
       </div>
       <div className="container mx-auto">
-        <div>
+        <div className="flex justify-between items-center">
           <p className="text-[#001931] text-2xl leading-8 font-semibold">
-            {wishlist.length} Apps Found
+            {sortedItem.length} Apps Found
           </p>
+          <label className="w-32">
+            <select
+              className="select select-bordered"
+              value={sortOrder}
+              onChange={e => setSortOrder(e.target.value)}
+            >
+              <option value="none">Sort by Size</option>
+              <option value="size-asc">Low-&gt;High</option>
+              <option value="size-desc">High-&gt;Low</option>
+            </select>
+          </label>
         </div>
 
         <div className="space-y-3 py-10">
-          {wishlist.map(p => (
+          {sortedItem.map(p => (
             <div key={p.id} className="card card-side bg-base-100 shadow px-3">
               <figure>
                 <img
@@ -53,7 +88,10 @@ const Installation = () => {
                 </div>
               </div>
               <div className="pr-4 flex items-center gap-3">
-                <button className="btn bg-[#00D390] text-white font-semibold">
+                <button
+                  onClick={() => handleRemove(p.id, p.title)}
+                  className="btn bg-[#00D390] text-white font-semibold"
+                >
                   Uninstall
                 </button>
               </div>
@@ -61,6 +99,7 @@ const Installation = () => {
           ))}
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
