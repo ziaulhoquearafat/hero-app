@@ -8,7 +8,6 @@ import { toast, ToastContainer } from 'react-toastify';
 import {
   Bar,
   BarChart,
-  CartesianGrid,
   Legend,
   ResponsiveContainer,
   Tooltip,
@@ -79,7 +78,7 @@ const AppDetails = () => {
                   <img src={reviewImg} alt="" />
                   <p className="text-base  text-[#001931]">Total Reviews</p>
                   <p className="text-4xl text-[#001931] font-extrabold">
-                    {reviews}
+                    {reviews}K
                   </p>
                 </div>
               </div>
@@ -97,26 +96,32 @@ const AppDetails = () => {
         <p className="divider w-full"></p>
         {/* chart */}
 
-        {/* <div className="space-y-3">
-          <h3 className="text-xl font-semibold">Wishlist Summery</h3>
-          <div className="bg-base-100 border rounded-xl p-4 h-80">
+        <div className="space-y-3">
+          <h3 className="text-xl font-semibold text-[#001931]">Ratings</h3>
+          <div className="bg-[#f5f5f5] rounded-xl p-4 h-80">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
-                data={app.rating}
+                data={ratings}
                 layout="vertical"
                 barSize={20}
                 barCategoryGap={'20%'}
               >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis type="number" dataKey="price" />
-                <YAxis type="category" dataKey="category" />
+                <XAxis type="number" dataKey="count" />
+                <YAxis type="category" dataKey="name" reversed />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="price" fill="#8884d8" />
+                <Bar dataKey="count" fill="#FF8811" />
               </BarChart>
             </ResponsiveContainer>
           </div>
-        </div> */}
+        </div>
+        <p className="divider w-full"></p>
+        <div>
+          <h3 className="text-xl font-semibold text-[#001931] mb-5">
+            Description
+          </h3>
+          <p>{description}</p>
+        </div>
       </div>
       <ToastContainer />
     </div>
