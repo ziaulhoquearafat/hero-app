@@ -39,11 +39,11 @@ const AppDetails = () => {
   const handleClick = () => {
     toast.success(`${title} Installed Successfuly`, {
       position: 'top-center',
-      autoClose: 3000,
+      autoClose: 2000,
     });
     setIsInstalled(true);
 
-    const existingList = JSON.parse(localStorage.getItem('installation'));
+    const existingList = JSON.parse(localStorage.getItem('wishlist'));
     let updateList = [];
 
     if (existingList) {
@@ -54,7 +54,7 @@ const AppDetails = () => {
       updateList.push(app);
     }
 
-    localStorage.setItem('installation', JSON.stringify(updateList));
+    localStorage.setItem('wishlist', JSON.stringify(updateList));
   };
 
   return (
