@@ -6,7 +6,7 @@
     "id": 1,
     "description": "ChatLink is a smart, fast, and secure messaging app designed to connect you with your friends, family, and communities worldwide. Enjoy seamless chatting, voice and video calls, group messaging, and media sharing all in one place. With end-to-end encryption and cloud sync, your messages are always safe and accessible from any device. Customize your experience with themes, emojis, and reactions. Whether you’re working remotely or catching up with loved ones, ChatLink keeps your conversations flowing smoothly and privately, without unnecessary ads or distractions.",
     "size": 42,
-    "reviews": 12500,
+    "reviews": 12,
     "ratingAvg": 4.5,
     "downloads": 1,
     "ratings": [
@@ -24,7 +24,7 @@
     "id": 2,
     "description": "TaskMate is your ultimate productivity partner that helps you organize your daily routine, set goals, and stay on track effortlessly. Create to-do lists, manage projects, and collaborate with your team all from one intuitive dashboard. The app features reminders, recurring tasks, and visual progress tracking so you can focus on what matters most. Whether you’re planning a busy workday or personal errands, TaskMate makes time management easy. Sync across devices, add voice notes, and get smart suggestions that adapt to your habits and workflow.",
     "size": 28,
-    "reviews": 8900,
+    "reviews": 8,
     "ratingAvg": 4.3,
     "downloads": 7,
     "ratings": [
@@ -42,7 +42,7 @@
     "id": 3,
     "description": "FitBuddy is your personal health companion that motivates you to stay active, fit, and confident every day. Track workouts, calories, steps, and sleep effortlessly. Get personalized fitness plans designed by experts for weight loss, muscle gain, or general wellness. The app also features guided video workouts, meal tracking, hydration reminders, and performance analytics. Sync your progress with wearables and share achievements with friends. Whether you’re a beginner or a fitness enthusiast, FitBuddy helps you stay consistent and reach your goals with motivation and precision.",
     "size": 55,
-    "reviews": 15600,
+    "reviews": 15,
     "ratingAvg": 4.7,
     "downloads": 2,
     "ratings": [
@@ -60,7 +60,7 @@
     "id": 4,
     "description": "MusicFlow lets you experience music like never before. Stream millions of songs from global artists, create personalized playlists, and explore new genres daily. The app offers a powerful audio equalizer, offline playback, and smart recommendations based on your mood and activity. Discover trending charts, podcasts, and live radio stations all in one place. MusicFlow delivers crystal-clear sound and a beautiful user interface that adapts to your preferences. Whether you’re working, studying, or relaxing, MusicFlow keeps your world full of rhythm and energy.",
     "size": 64,
-    "reviews": 23000,
+    "reviews": 23,
     "ratingAvg": 4.2,
     "downloads": 5,
     "ratings": [
@@ -78,7 +78,7 @@
     "id": 5,
     "description": "PhotoFix is an AI-powered photo editing app that transforms your images with just one tap. Enhance colors, remove blemishes, adjust lighting, and apply artistic filters effortlessly. With professional-grade tools, you can retouch portraits, replace backgrounds, and restore old photos to high quality. The app also includes batch editing, collage maker, and smart cropping options. Whether you’re a photographer or a casual user, PhotoFix helps your pictures look stunning instantly. Share your edits on social media or save them in full resolution with ease.",
     "size": 79,
-    "reviews": 18000,
+    "reviews": 18,
     "ratingAvg": 4.6,
     "downloads": 4,
     "ratings": [
@@ -96,7 +96,7 @@
     "id": 6,
     "description": "NoteEase is a lightweight, user-friendly note-taking app designed to help you capture ideas, lists, and reminders quickly and efficiently. You can organize your notes into folders, tag them for easy searching, and even record voice memos for moments when typing isn’t convenient. The app supports rich text formatting, checklists, and image attachments, making it perfect for students, professionals, and creatives alike. Notes sync across all your devices automatically so you never lose important information. With a clean interface, customizable themes, and optional offline mode, NoteEase turns note-taking into an effortless daily habit.",
     "size": 19,
-    "reviews": 5400,
+    "reviews": 54,
     "ratingAvg": 4.1,
     "downloads": 6,
     "ratings": [
@@ -114,7 +114,7 @@
     "id": 7,
     "description": "Weatherly provides accurate, real-time weather forecasts so you can plan your day with confidence. Track temperature, humidity, wind, and air quality for your location, or explore global weather updates. Get detailed hourly and weekly forecasts, severe weather alerts, and interactive radar maps. The app also includes lifestyle recommendations for outdoor activities, clothing suggestions, and pollen alerts for allergy sufferers. Its sleek design and customizable notifications make it easy to stay informed without being overwhelmed. Weatherly helps you stay prepared and safe, no matter the weather conditions.",
     "size": 33,
-    "reviews": 9700,
+    "reviews": 97,
     "ratingAvg": 4.4,
     "downloads": 1,
     "ratings": [
@@ -132,7 +132,7 @@
     "id": 8,
     "description": "BudgetPal is your personal finance assistant that helps you track spending, manage budgets, and achieve your financial goals effortlessly. Connect your bank accounts, categorize expenses automatically, and get insightful reports to understand your spending habits. Set savings targets, receive bill reminders, and get actionable tips to reduce unnecessary costs. The app also supports multi-currency tracking, goal-based savings plans, and detailed charts for visualizing progress. Whether you’re planning for short-term needs or long-term investments, BudgetPal simplifies financial management and empowers you to make smarter money decisions every day.",
     "size": 27,
-    "reviews": 6100,
+    "reviews": 61,
     "ratingAvg": 4.3,
     "downloads": 8,
     "ratings": [
@@ -150,7 +150,7 @@
     "id": 9,
     "description": "TravelGo is your all-in-one travel planning app, designed to make trips effortless and enjoyable. Discover destinations, compare hotels, book flights, and explore local experiences, all in one place. The app provides interactive maps, itinerary suggestions, travel tips, and user reviews to ensure a smooth journey. Receive real-time updates for flight delays, gate changes, and weather alerts. With offline access and smart recommendations based on your preferences, TravelGo helps you explore new cities confidently. Whether planning a solo adventure or a family vacation, TravelGo makes every trip seamless and memorable.",
     "size": 59,
-    "reviews": 13400,
+    "reviews": 134,
     "ratingAvg": 4.5,
     "downloads": 2,
     "ratings": [
@@ -168,7 +168,7 @@
     "id": 10,
     "description": "MindCalm is a meditation and wellness app that helps you reduce stress, improve focus, and sleep better. Enjoy guided meditation sessions, breathing exercises, relaxing soundscapes, and bedtime stories. Track your mindfulness progress with daily streaks, mood journals, and personalized recommendations. The app also includes themed meditation packs for anxiety, gratitude, energy, and relaxation. MindCalm’s interface is soothing and easy to navigate, designed to create a peaceful experience. Whether you’re a beginner or a seasoned practitioner, MindCalm supports your mental well-being and helps you cultivate calm, focus, and balance every day.",
     "size": 48,
-    "reviews": 15700,
+    "reviews": 15,
     "ratingAvg": 4.8,
     "downloads": 3,
     "ratings": [
@@ -186,7 +186,7 @@
     "id": 11,
     "description": "LearnEasy is an interactive learning platform designed to make education fun and effective for learners of all ages. Access thousands of video lessons, quizzes, and assignments across subjects like math, science, languages, and coding. Track your progress with performance analytics, earn badges, and set learning goals to stay motivated. The app supports offline access, personalized recommendations, and collaborative study features for group learning. Whether you’re a student looking to improve grades, a professional upskilling, or a curious mind exploring new topics, LearnEasy helps you learn efficiently and enjoyably at your own pace.",
     "size": 73,
-    "reviews": 20400,
+    "reviews": 204,
     "ratingAvg": 4.6,
     "downloads": 4,
     "ratings": [
@@ -204,7 +204,7 @@
     "id": 12,
     "description": "CookIt is a comprehensive recipe and cooking app that brings thousands of dishes to your fingertips. Discover new cuisines, save favorites, and create shopping lists effortlessly. Each recipe comes with step-by-step instructions, photos, and videos to guide you from prep to plating. CookIt also offers meal planning, nutritional information, and personalized recommendations based on your dietary preferences. Share your culinary creations with a community of home chefs, rate recipes, and participate in cooking challenges. Whether you’re a beginner or an experienced cook, CookIt makes cooking enjoyable, educational, and creative every day.",
     "size": 36,
-    "reviews": 8700,
+    "reviews": 87,
     "ratingAvg": 4.2,
     "downloads": 1,
     "ratings": [
@@ -222,7 +222,7 @@
     "id": 13,
     "description": "CryptoTrack is a comprehensive cryptocurrency tracking app that provides live updates on prices, market trends, and portfolio performance. Stay informed with price alerts, news feeds, and expert analysis to make smart investment decisions. The app supports multiple cryptocurrencies and exchanges, providing historical charts and detailed analytics. You can track your portfolio’s growth, set price targets, and monitor trending coins. CryptoTrack also offers educational resources to help beginners understand the crypto world. With a secure, intuitive interface, the app empowers traders and investors to navigate the fast-paced crypto market confidently and efficiently.",
     "size": 25,
-    "reviews": 10500,
+    "reviews": 10,
     "ratingAvg": 4.4,
     "downloads": 2,
     "ratings": [
@@ -240,7 +240,7 @@
     "id": 14,
     "description": "Langify is a language learning app designed to make mastering new languages fun, interactive, and effective. Access lessons for multiple languages, including grammar, vocabulary, and pronunciation. Practice speaking, reading, listening, and writing with interactive exercises, quizzes, and games. Track your progress, set daily goals, and earn rewards to stay motivated. The app also provides real-life conversation scenarios, cultural insights, and AI-powered pronunciation feedback to enhance your skills. Whether you’re learning for travel, work, or personal growth, Langify helps you gain confidence and fluency step by step in a structured and enjoyable way.",
     "size": 62,
-    "reviews": 9200,
+    "reviews": 92,
     "ratingAvg": 4.5,
     "downloads": 3,
     "ratings": [
@@ -258,7 +258,7 @@
     "id": 15,
     "description": "DriveSafe is a smart driving assistant app that helps you stay safe and informed on the road. Monitor your speed, get real-time traffic updates, and receive accident alerts and navigation guidance. The app includes fuel tracking, trip logging, and driving performance analytics to improve efficiency and safety. Customize alerts for harsh braking, sharp turns, or fatigue reminders. With offline navigation, route optimization, and parking assistance, DriveSafe makes every drive stress-free. Perfect for commuters, delivery drivers, and road trip enthusiasts, the app combines technology and safety to enhance your driving experience.",
     "size": 70,
-    "reviews": 13300,
+    "reviews": 13,
     "ratingAvg": 4.3,
     "downloads": 6,
     "ratings": [
@@ -276,7 +276,7 @@
     "id": 16,
     "description": "ShopEase is your ultimate shopping companion, designed to make online and offline purchases fast, easy, and enjoyable. Discover products across categories, compare prices, read reviews, and find the best deals all in one place. The app offers personalized recommendations based on your preferences, smart notifications for sales and discounts, and a secure checkout experience. Track your orders in real-time, manage returns effortlessly, and save favorite items for later. With a clean, intuitive interface and loyalty rewards, ShopEase turns shopping into a seamless and satisfying experience for both casual buyers and avid shoppers.",
     "size": 85,
-    "reviews": 17400,
+    "reviews": 17,
     "ratingAvg": 4.5,
     "downloads": 7,
     "ratings": [
@@ -294,7 +294,7 @@
     "id": 17,
     "description": "FitMeal is a personalized meal planning and nutrition app that helps you achieve health and fitness goals with ease. Plan daily meals based on your calorie needs, dietary preferences, and fitness objectives. Access a large database of recipes, track nutrient intake, and receive reminders to stay on track. FitMeal also integrates with fitness trackers to monitor progress, adjust meal plans, and optimize results. Whether you want to lose weight, gain muscle, or maintain a healthy lifestyle, FitMeal provides guidance, analytics, and motivation. Enjoy healthy, balanced meals while saving time and staying informed about your nutrition.",
     "size": 40,
-    "reviews": 9500,
+    "reviews": 95,
     "ratingAvg": 4.6,
     "downloads": 16,
     "ratings": [
@@ -312,7 +312,7 @@
     "id": 18,
     "description": "GameHub is the ultimate destination for mobile gamers, offering a huge library of casual, action, puzzle, and strategy games. Discover trending titles, play with friends, and compete in global leaderboards. The app provides personalized game recommendations based on your interests and achievements. Enjoy social features like chat, friend lists, and multiplayer tournaments. GameHub also tracks your stats, achievements, and gaming progress across devices. With regular updates and exclusive in-app events, GameHub keeps the experience fresh and exciting, making it perfect for casual players and dedicated gamers alike who want fun and competitive gameplay anytime, anywhere.",
     "size": 95,
-    "reviews": 21000,
+    "reviews": 21,
     "ratingAvg": 4.4,
     "downloads": 38,
     "ratings": [
@@ -330,7 +330,7 @@
     "id": 19,
     "description": "NewsFlash keeps you updated with breaking news and trending stories from around the world. Access verified news articles, videos, and live updates in multiple categories including politics, sports, technology, and entertainment. The app allows personalized news feeds, notifications for important events, and offline reading for convenience. Save favorite articles, share with friends, and follow specific topics or journalists. With a clean interface and AI-driven recommendations, NewsFlash ensures you stay informed, engaged, and aware of the world around you. Whether you’re a casual reader or a news enthusiast, the app delivers accurate and timely information.",
     "size": 52,
-    "reviews": 19800,
+    "reviews": 19,
     "ratingAvg": 4.3,
     "downloads": 33,
     "ratings": [
@@ -348,7 +348,7 @@
     "id": 20,
     "description": "LearnMusic is an educational app that teaches music theory, instruments, and composition through interactive lessons and practice exercises. Access tutorials for guitar, piano, drums, and more with step-by-step guidance. Practice with virtual instruments, receive feedback, and track your progress over time. The app offers quizzes, sheet music, and video lessons to enhance learning and make it engaging. Whether you are a beginner or an advanced musician, LearnMusic provides tools and resources to improve skills, understand music theory, and develop creativity. Enjoy a structured learning path that keeps motivation high and learning effective.",
     "size": 67,
-    "reviews": 12200,
+    "reviews": 12,
     "ratingAvg": 4.5,
     "downloads": 21,
     "ratings": [
