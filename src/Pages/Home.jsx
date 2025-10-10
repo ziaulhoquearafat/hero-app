@@ -6,9 +6,10 @@ import useApps from '../hooks/useApps';
 import { TrendingUp } from 'lucide-react';
 import AppCard from '../components/AppCard';
 import { Link } from 'react-router';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 const Home = () => {
-  const { apps } = useApps();
+  const { apps, loading } = useApps();
 
   const trendingApps = apps.slice(0, 8);
 
@@ -83,11 +84,22 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 container mx-auto p-5">
+      {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 container mx-auto p-5">
         {trendingApps.map(app => (
           <AppCard key={app.id} app={app}></AppCard>
         ))}
-      </div>
+      </div> */}
+
+      {loading ? (
+        <LoadingSpinner />
+      ) : (
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 container mx-auto p-5">
+          {trendingApps.map(app => (
+            <AppCard key={app.id} app={app}></AppCard>
+          ))}
+        </div>
+      )}
+
       <div className="flex justify-center py-5 pb-20">
         <Link
           to="/apps"
