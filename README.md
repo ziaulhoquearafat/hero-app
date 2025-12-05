@@ -5,7 +5,7 @@ can explore various apps, view app details, install or uninstall them, and
 visualize app ratings with interactive charts. It provides a clean UI, live
 search, local storage-based installation tracking, and smooth navigation.
 
-🚀 Live Demo 🔗 [Deployed Link Here]
+🚀 Live Demo 🔗 [https://hero-apps-3167.netlify.app/]
 
 ## ⚙️ Features
 
